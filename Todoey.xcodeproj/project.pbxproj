@@ -12,7 +12,8 @@
 		F90F18AD210F6208002D97BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F18AB210F6208002D97BC /* Main.storyboard */; };
 		F90F18AF210F6209002D97BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F90F18AE210F6209002D97BC /* Assets.xcassets */; };
 		F90F18B2210F6209002D97BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F90F18B0210F6209002D97BC /* LaunchScreen.storyboard */; };
-		F958A30321118BE6002A79B6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F958A30221118BE6002A79B6 /* Item.swift */; };
+		F958A30B2111B6D2002A79B6 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F958A3092111B6D2002A79B6 /* DataModel.xcdatamodeld */; };
+		F9EAF9672111F6430063C6E4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EAF9662111F6430063C6E4 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		F90F18AE210F6209002D97BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F90F18B1210F6209002D97BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F90F18B3210F6209002D97BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F958A30221118BE6002A79B6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F958A30A2111B6D2002A79B6 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		F9EAF9662111F6430063C6E4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,8 @@
 			children = (
 				F90F18A7210F6208002D97BC /* AppDelegate.swift */,
 				F958A30421118C00002A79B6 /* Data Model */,
-				F958A30621118C29002A79B6 /* Controller */,
 				F958A30721118C4B002A79B6 /* Views */,
+				F958A30621118C29002A79B6 /* Controller */,
 				F958A30821118C54002A79B6 /* Supporting Files */,
 				F90F18B3210F6209002D97BC /* Info.plist */,
 			);
@@ -69,7 +71,7 @@
 		F958A30421118C00002A79B6 /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				F958A30221118BE6002A79B6 /* Item.swift */,
+				F958A3092111B6D2002A79B6 /* DataModel.xcdatamodeld */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -77,6 +79,7 @@
 		F958A30621118C29002A79B6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				F9EAF9662111F6430063C6E4 /* CategoryViewController.swift */,
 				F90F18A9210F6208002D97BC /* TodoListViewController.swift */,
 			);
 			path = Controller;
@@ -170,8 +173,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9EAF9672111F6430063C6E4 /* CategoryViewController.swift in Sources */,
 				F90F18AA210F6208002D97BC /* TodoListViewController.swift in Sources */,
-				F958A30321118BE6002A79B6 /* Item.swift in Sources */,
+				F958A30B2111B6D2002A79B6 /* DataModel.xcdatamodeld in Sources */,
 				F90F18A8210F6208002D97BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,6 +374,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F958A3092111B6D2002A79B6 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F958A30A2111B6D2002A79B6 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = F958A30A2111B6D2002A79B6 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F90F189C210F6208002D97BC /* Project object */;
 }
